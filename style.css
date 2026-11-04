@@ -277,6 +277,8 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; border-
   transition: opacity 0.25s ease-out;
 }
 .jack.on { opacity: 1; transition-duration: 0.08s; }
+.ride { position: absolute; inset: 0; pointer-events: none; }
+.ride canvas { position: absolute; display: block; }
 
 .dissolve { position: relative; margin: clamp(1.8rem, 4.5vw, 3.2rem) 0 0; }
 .dissolve img {
