@@ -6,7 +6,9 @@
       "is a new kind",
       "of social technology,",
       "designed to bring",
-      "people together."
+      "people and the things",
+      "they know together",
+      "for the common good."
     ];
     var SHOW = 1500, HOLD_LAST = 2400, GAP = 900, START = 1200;
     var i = 0;
