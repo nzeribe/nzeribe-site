@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="film.css">
 <script src="site.js" defer></script>
+<script src="film.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +33,10 @@
     <h1 class="name"><span>Ikem</span> <span>Nzeribe</span></h1>
     <div class="who">
       <img class="portrait" src="img/ikem.jpg" width="640" height="640" alt="Ikem Nzeribe: a handlebar moustache, black rectangular glasses and a string of beads; a serious, direct look.">
-      <p class="lede">Building the Public Computer.</p>
+      <div class="say">
+        <p class="lede">Building the Public Computer.</p>
+        <p class="sub">A decade-long journey in the hunt for a new technology.</p>
+      </div>
     </div>
   </section>
 
@@ -56,6 +60,8 @@
     </figure>
 
     <figure class="film" id="film">
+      <p class="kicker">2016</p>
+      <p class="say">&ldquo;I&rsquo;m not waiting for funding, I&rsquo;m not waiting for permission. I don&rsquo;t care. I&rsquo;m just getting it done.&rdquo;</p>
       <div class="frame">
         <video controls preload="none" playsinline width="1280" height="720" poster="img/moss-code-poster.webp" aria-label="Moss Code vs The Illuminati. A film.">
           <source src="film/moss-code.mp4" type="video/mp4">
@@ -63,7 +69,16 @@
       </div>
     </figure>
 
+    <svg class="thread" viewBox="0 0 1200 250" role="img" aria-label="An arrow drawn by hand from the first film to the second: the same thread.">
+      <path class="stroke ghost" transform="translate(3 2)" d="M 96 6 C 70 90, 170 150, 330 132 C 500 112, 540 30, 690 48 C 840 66, 800 168, 940 150 C 1030 138, 1088 150, 1096 226"/>
+      <path class="stroke" d="M 96 6 C 70 90, 170 150, 330 132 C 500 112, 540 30, 690 48 C 840 66, 800 168, 940 150 C 1030 138, 1088 150, 1096 226"/>
+      <path class="stroke head" d="M 1110.6 195.3 L 1096 226 L 1076.7 198"/>
+      <text x="360" y="216" transform="rotate(-3 360 216)">the same thread</text>
+    </svg>
+
     <figure class="film torn-b" id="film-field">
+      <p class="kicker">2026</p>
+      <p class="say">&ldquo;I say we get ahead and we invent the future right here.&rdquo;</p>
       <div class="frame">
         <video controls preload="none" playsinline width="1280" height="720" poster="img/social-field-poster.webp" aria-label="What is a social field? A film.">
           <source src="film/social-field.mp4" type="video/mp4">
