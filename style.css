@@ -243,7 +243,42 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; border-
   .who { align-items: flex-start; }
 }
 
-.dissolve { margin: clamp(1.8rem, 4.5vw, 3.2rem) 0 0; }
+.machine, .calls {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.machine .clip { position: absolute; inset: 0; }
+.machine .reel { position: absolute; }
+.machine .reel img { width: 100%; height: 100%; filter: none; }
+.lamp, .jack { position: absolute; }
+.lamp .shade, .lamp .glow {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.22s ease-out;
+}
+.lamp .shade {
+  inset: 29%;
+  background: radial-gradient(circle closest-side, #77736b 0 72%, rgba(119, 115, 107, 0) 100%);
+  mix-blend-mode: multiply;
+}
+.lamp .glow {
+  inset: 0;
+  background: radial-gradient(circle closest-side, rgba(255, 247, 210, 0.95) 0, rgba(255, 214, 90, 0.9) 30%, rgba(242, 191, 42, 0.4) 50%, rgba(242, 191, 42, 0) 100%);
+  mix-blend-mode: screen;
+}
+.lamp.on .glow, .lamp.off .shade { opacity: 1; transition-duration: 0.07s; }
+.jack {
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, #fff4c4 0, #ffd84f 14%, rgba(242, 191, 42, 0.95) 24%, rgba(242, 191, 42, 0.5) 42%, rgba(242, 191, 42, 0.16) 70%, rgba(242, 191, 42, 0) 100%);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+.jack.on { opacity: 1; transition-duration: 0.08s; }
+
+.dissolve { position: relative; margin: clamp(1.8rem, 4.5vw, 3.2rem) 0 0; }
 .dissolve img {
   width: 100%;
   mix-blend-mode: screen;
