@@ -191,7 +191,7 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; border-
   font-size: clamp(1.35rem, 1rem + 1.5vw, 2.4rem);
   line-height: 1.12;
   text-wrap: balance;
-  color: var(--yellow);
+  color: var(--cream);
 }
 
 .racer { margin-top: clamp(3rem, 8vw, 6rem); }
